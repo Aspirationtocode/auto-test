@@ -40,6 +40,8 @@
     "colors": "^1.1.2",
     "lodash": "^4.17.4",
     "minimist": "^1.2.0",
+    "react-chrome-redux": "^1.5.1",
+    "redux": "^3.7.2",
     "webpack-sources": "^1.0.1",
     "ws": "^3.3.3"
   },

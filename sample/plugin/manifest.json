@@ -5,7 +5,12 @@
   "background": {
     "scripts": [
       "background.js"
-    ]
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Test sites",
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {

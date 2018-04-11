@@ -7,7 +7,8 @@ module.exports = {
   devtool: "source-map",
   entry: {
     "content-script": "./sample/plugin/my-content-script.js",
-    "background": "./sample/plugin/my-background.js"
+    "background": "./sample/plugin/my-background.js",
+    "popup": "./sample/plugin/my-popup.js"
   },
   output: {
     publicPath: ".",
@@ -21,7 +22,8 @@ module.exports = {
 
     new ExtractTextPlugin({ filename: "style.css" }),
     new CopyWebpackPlugin([{ from: "./sample/plugin/some-asset.txt", flatten: true }]),
-    new CopyWebpackPlugin([{ from: "./sample/plugin/manifest.json", flatten: true }])
+    new CopyWebpackPlugin([{ from: "./sample/plugin/manifest.json", flatten: true }]),
+    new CopyWebpackPlugin([{ from: "./sample/plugin/popup.html", flatten: true }])
   ].filter(plugin => !!plugin),
   module: {
     rules: [{
